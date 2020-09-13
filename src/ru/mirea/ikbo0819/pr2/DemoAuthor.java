@@ -6,7 +6,7 @@ public class DemoAuthor {
         Author c1 = new Author("Lev Nikolayevich Tolstoy",
                 'f',
                 "lNikolayTol@somewhere.com");
-        Author c2 = new Author("Andrey Bely",'i',"aBely@somewhere.com");
+        Author c2 = new Author("Andrey Bely",'?',"aBely@somewhere.com");
 
         System.out.println(c1);
         System.out.println(c2);
