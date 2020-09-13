@@ -4,7 +4,7 @@ import java.lang.*;
 public class DemoAuthor {
     public static void main(String[] args) {
         Author c1 = new Author("Lev Nikolayevich Tolstoy",
-                'i',
+                'f',
                 "lNikolayTol@somewhere.com");
         Author c2 = new Author("Andrey Bely",'i',"aBely@somewhere.com");
 
