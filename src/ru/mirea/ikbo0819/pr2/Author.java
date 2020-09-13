@@ -10,6 +10,15 @@ public class Author {
         Name = name;
         Email = email;
         Gender = gender;
+
+        switch (Gender){
+            case 'f': System.out.print(Gender = 'f');
+            break;
+            case 'm': System.out.print(Gender = 'm');
+            break;
+            default: System.out.print(Gender = 'u');
+            break;
+        }
     }
 
     public String getName() {
@@ -19,6 +28,7 @@ public class Author {
     public char getGender() {
         return Gender;
     }
+
 
     public String getEmail() {
         return Email;
