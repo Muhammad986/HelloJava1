@@ -8,5 +8,8 @@ public class DemoAuthor {
                 "lNikolayTol@somewhere.com");
 
         System.out.println(c1);
+        System.out.println("name is: " + c1.getName());
+        System.out.println("gender is: " + c1.getGender());
+        System.out.println("gender: " + c1.getEmail());
     }
 }
