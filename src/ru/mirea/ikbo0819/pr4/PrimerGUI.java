@@ -48,12 +48,12 @@ class PrimerGUI extends JFrame{
                 if(e.getSource() == s1){
                     result = a + k;
                     JOptionPane.showMessageDialog(null,
-                            "Result = "+ result/*"Alert",JOptionPane.INFORMATION_MESSAGE*/);
+                            "Result = "+ result);
                 }
                 if(e.getSource() == s2){
                     result = a - k;
                     JOptionPane.showMessageDialog(null,
-                            "Result = "+ result/*"Alert",JOptionPane.INFORMATION_MESSAGE*/);
+                            "Result = "+ result);
                 }
                 if(e.getSource() == s3){
                     result = a * k;
@@ -63,7 +63,7 @@ class PrimerGUI extends JFrame{
                 if(e.getSource() == s4){
                     result = a / k;
                     JOptionPane.showMessageDialog(null,
-                            "Result = "+ result/*"Alert",JOptionPane.INFORMATION_MESSAGE*/);
+                            "Result = "+ result);
                 }
             }catch (Exception ex){
                 if(e.getSource() == s5){
