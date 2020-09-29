@@ -34,7 +34,6 @@ class PrimerGUI extends JFrame{
         s2.addActionListener(handler);
         s3.addActionListener(handler);
         s4.addActionListener(handler);
-        //s5.addActionListener(handler);
     }
     public class eHandler implements ActionListener{
         public void actionPerformed(ActionEvent e) {
@@ -45,31 +44,34 @@ class PrimerGUI extends JFrame{
                     t1.setText(null);
                     t2.setText(null);
                 }
-                if(e.getSource() == s1){
+                else if(e.getSource() == s1){
                     result = a + k;
                     JOptionPane.showMessageDialog(null,
                             "Result = "+ result);
                 }
-                if(e.getSource() == s2){
+                else if(e.getSource() == s2){
                     result = a - k;
                     JOptionPane.showMessageDialog(null,
                             "Result = "+ result);
                 }
-                if(e.getSource() == s3){
+                else if(e.getSource() == s3){
                     result = a * k;
                     JOptionPane.showMessageDialog(null,
                             "Result = "+ result);
                 }
-                if(e.getSource() == s4){
+                else if(e.getSource() == s4){
                     result = a / k;
                     JOptionPane.showMessageDialog(null,
                             "Result = "+ result);
-                }
+                }else
+                    JOptionPane.showMessageDialog(null,
+                            "Error! Enter the number.",
+                            "alert" , JOptionPane.ERROR_MESSAGE);
             }catch (Exception ex){
-                if(e.getSource() == s5){
-                    t1.setText(null);
-                    t2.setText(null);
-                }
+              //  if(e.getSource() == s5){
+                //    t1.setText(null);
+                  //  t2.setText(null);
+                //}
                 JOptionPane.showMessageDialog(null,
                         "Error! Enter the number.",
                         "alert" , JOptionPane.ERROR_MESSAGE);
