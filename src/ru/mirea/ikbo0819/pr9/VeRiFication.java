@@ -1,13 +1,12 @@
 package ru.mirea.ikbo0819.pr9;
 
-public class Verification_INN  extends Exception
-{
-    public Verification_INN(Account client)
+public class VeRiFication extends Exception {
+    public VeRiFication(Account client)
     {
         super("У клиента "+client.getName()+" недействительный ИНН");
     }
 
-    public Verification_INN(String massage)
+    public VeRiFication(String massage)
     {
         super(massage);
     }
