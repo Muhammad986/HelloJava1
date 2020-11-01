@@ -17,9 +17,9 @@ public class Account {
         return name;
     }
 
-    public void test_INN(String inn) throws Verification_INN {
+    public void test_INN(String inn) throws VeRiFication {
         if (inn.length() != 10)
-            throw new Verification_INN(this);
+            throw new VeRiFication(this);
     }
 
     public static void main(String[] args) {
@@ -27,7 +27,7 @@ public class Account {
         try {
             client.test_INN(client.get_INN());
             System.out.println("ИНН клиента " + client.getName() + " действителен.");
-        } catch (Verification_INN e) {
+        } catch (VeRiFication e) {
             System.out.println(e.getMessage());
             ;
         }
@@ -36,7 +36,7 @@ public class Account {
         try {
             client1.test_INN(client1.get_INN());
             System.out.println("ИНН клиента " + client1.getName() + " действителен.");
-        } catch (Verification_INN e) {
+        } catch (VeRiFication e) {
             System.out.println(e.getMessage());
             ;
         }
@@ -45,7 +45,7 @@ public class Account {
         try {
             client2.test_INN(client2.get_INN());
             System.out.println("ИНН клиента " + client2.getName() + " действителен.");
-        } catch (Verification_INN e) {
+        } catch (VeRiFication e) {
             System.out.println(e.getMessage());
         }
     }
