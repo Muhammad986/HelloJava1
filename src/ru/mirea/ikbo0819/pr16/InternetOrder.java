@@ -8,7 +8,7 @@ public class InternetOrder implements Order {
     }
 
     public InternetOrder(RestaurantOrder order) {
-        Dish[] dishes = order.getAllDishes();
+        Dish[]  dishes = order.getAllDishes();
         Drink[] drinks = order.getAllDrinks();
         for (Dish dish : dishes) {
             add(dish);
